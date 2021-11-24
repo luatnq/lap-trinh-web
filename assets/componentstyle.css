@@ -6,7 +6,7 @@ body {
     margin: 0;
     overflow: hidden;
     background: #152B39;
-    font-family: Courier, monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     color:#ccc; 
   }

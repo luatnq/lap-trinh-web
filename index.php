@@ -13,14 +13,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <title>Quản lý đơn hàng</title>
 </head>
 
 <body>
     <div class="sidebar close">
         <div class="logo-details">
-            <span class="logo_header ">Quản lý đơn hàng</span>
+        <div class="row logo_header" style="height: 50px;">
+            <div class="col" style="display: contents;">
+            <img src="./img/download.png" alt="" style="width: 50px;border-radius: 26px;" class="d-inline-block align-text-top"> 
+              <span>Luật lợn</span>  
+            </div>  
+  </div>
+  <div class="row logo_header1" style="height: 50px;">
+            <div class="col" style="display: contents;">
+            <img src="./img/download.png" alt="" style="width: 50px;border-radius: 26px;" class="d-inline-block align-text-top"> 
+            </div>  
+  </div>
+
         </div>
         <ul class="nav-links">
             <li> <a href="#"> <i class="fas fa-chart-line"></i> <span class="link_name">Dashboard</span> </a></li>
@@ -43,8 +56,55 @@
 
     <section class="home-section">
         <div class="home-content">
-            <i class='bx bx-menu'></i>
+            <div class="row" style="width: 100%;">
+                <div class="col" style="display: flex;">
+                    <i class='bx bx-menu'></i>
+                    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Nhập từ tìm kiếm ..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+      </form>   
+                </div>
+                <div class="col" style="text-align: right;align-self: center;">
+                    <i class="fas fa-info-circle" style="font-size: 25px;margin-right: 20px;"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                        <i class="fas fa-map-marked-alt" style="font-size: 25px;margin-right: 20px;" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                            <li><a class="dropdown-item" href="#">Action2</a></li>
+                            <li><a class="dropdown-item" href="#">Another action2</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here2</a></li>
+                        </ul>
+
+                        <i class="fas fa-wrench" style="font-size: 25px;margin-right: 20px;" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                            <li><a class="dropdown-item" href="#">Action2</a></li>
+                            <li><a class="dropdown-item" href="#">Another action2</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here2</a></li>
+                        </ul>
+
+                        <i class="fas fa-user-edit" style="font-size: 25px;margin-right: 20px;" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                            <li><a class="dropdown-item" href="#">Action2</a></li>
+                            <li><a class="dropdown-item" href="#">Another action2</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here2</a></li>
+                        </ul>
+
+                        <i class="fas fa-grip-vertical" style="font-size: 25px;margin-right: 20px;" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                            <li><a class="dropdown-item" href="#">Action2</a></li>
+                            <li><a class="dropdown-item" href="#">Another action2</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here2</a></li>
+                        </ul>
+                </div>
+            </div>
+
+
         </div>
+
         <?php
         include("./admin/config/connect.php");
         include("./modules/main.php");
